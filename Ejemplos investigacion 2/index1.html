@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemento padre</title>
+</head>
+
+<body>
+    <!-- Ejemplo del Elemento padre -->
+    <p>Example list:</p>
+
+    <ul>
+        <li id="myLI">Coffee</li>
+        <li>Tea</li>
+    </ul>
+
+    <p>Click the button to get the node name of the parent element of the li element in the list.</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo"></p>
+
+    <!-- Acá está el script -->
+    <script>
+        function myFunction() {
+            let x = document.getElementById("myLI").parentElement.nodeName;
+            document.getElementById("demo").innerHTML = x;
+        }
+    </script>
+</body>
+</html>

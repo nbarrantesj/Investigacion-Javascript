@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos hijos</title>
+</head>
+
+<body>
+    <!-- Ejemplo de los Elementos hijos -->
+    <p>Click the button to get the tag names of the body element's children.</p>
+
+    <button onclick="myFunction()">Try it</button>
+    
+    <p id="demo"></p>
+    
+    <!-- Acá está el script -->
+    <script>
+    function myFunction() {
+      let c = document.body.children;
+      let txt = "";
+      let i;
+      for (i = 0; i < c.length; i++) {
+        txt = txt + c[i].tagName + "<br>";
+      }
+    
+      document.getElementById("demo").innerHTML = txt;
+    }
+    </script>
+</body>
+</html>
